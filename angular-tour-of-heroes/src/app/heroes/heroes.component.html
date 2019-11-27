@@ -1,0 +1,13 @@
+<p>{{ hero.name | uppercase }}</p>
+<!-- didnt realize this is interpolation, pretty cool. Angular is growing on me -->
+<div>
+  id:
+  <span>{{ hero.id }}</span>
+</div>
+<div>
+  <span>{{ hero.name }}</span>
+</div>
+<div>
+  <label>name:</label>
+  <input type="text" [(ngModel)]="hero.name" placeholder="name" />
+</div>
