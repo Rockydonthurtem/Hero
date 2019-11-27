@@ -9,8 +9,9 @@ import { HeroService } from "../hero.service";
   styleUrls: ["./heroes.component.css"]
 })
 export class HeroesComponent implements OnInit {
-  heroes = Hero;
   selectedHero: Hero;
+
+  heroes: Hero[];
 
   constructor(private heroService: HeroService) {}
 
@@ -28,7 +29,7 @@ export class HeroesComponent implements OnInit {
   // Observable to emit the array of heroes—which could happen now or several minutes from now.
   // The subscribe() method passes the emitted array to the callback,
   // which sets the component's heroes property.
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 }
